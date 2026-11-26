@@ -25,8 +25,8 @@
   </header>
 
   <main id="main">
-    <section class="section" id="faq">
-      <h2>Frequently Asked Questions</h2>
+    <section class="section" id="faq" aria-labelledby="FAQ">
+      <h2 id="FAQ">Frequently Asked Questions</h2>
       <details class="topic">
         <summary>About Classes</summary>
         <details class="question">
@@ -197,20 +197,20 @@
           </p>
           <div class="field">
               <label for="name">Your Name<span class="required" aria-label="required"> *</span></label>
-              <input id="name" name="name" type="text" autocomplete="name" placeholder="Clay Potter" aria-describedby="contact-info-help" required>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Clay Potter" required>
           </div>
           <div class="field">
               <label for="email">Email Address<span class="required" aria-label="required"> *</span></label>
-              <input id="email" name="email" type="email" autocomplete="email" placeholder="clay@example.com" aria-describedby="contact-info-help" required>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="clay@example.com" required>
           </div>
           <div class="field">
               <label for="phone">Phone Number<span class="required" aria-label="required"> *</span></label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="123-456-7890" aria-describedby="contact-info-help" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
           </div>
           <div class="field column">
               <p class="help" id="contact-method-help">Preferred Contact Method<span class="required"> *</span></p>
-              <label class="choice"><input id="contact-phone" name="contact" type="radio" value="phone" required aria-describedby="contact-method-help"> Phone</label>
-              <label class="choice"><input id="contact-email" name="contact" type="radio" value="email" required aria-describedby="contact-method-help"> Email</label>
+              <label class="choice"><input id="contact-phone" name="contact" type="radio" value="phone" required> Phone</label>
+              <label class="choice"><input id="contact-email" name="contact" type="radio" value="email" required> Email</label>
           </div>
         </fieldset>
         <label for="topic">Please let us know the reason for contacting us.</label>
